@@ -3,14 +3,14 @@ import RPi.GPIO as GPIO
 import schedule
 
 # Pins
-moisture1_pin = 38
-moisture2_pin = 40
-dht11_pin = 28
-lights_pin = 32
-ldr_m_pin = 12
-ldr_t_pin = 10
-pump_pin = 8
-water_level_pin = 36
+moisture1_pin = 5
+moisture2_pin = 3
+dht11_pin = 23
+lights_pin = 35
+ldr_m_pin = 31
+ldr_t_pin = 29
+pump_pin = 33
+water_level_pin = 7
 
 # GPIO setup
 GPIO.setmode(GPIO.BOARD)
@@ -108,7 +108,7 @@ def water():
 # Does the plant need more lights?
 
 
-def lights(current_time):
+def lights_run(current_time):
     # Temporary code until ideal values are identified
     print("current time = ", current_time)
     print("light levels = ", check_light_level())
@@ -124,13 +124,19 @@ def lights_on(level):
 
 
 def check_all():
+    time.sleep(1)
     print("Light level = ", check_light_level())
+    time.sleep(1)
     print("Moisture Sensor1 = ", GPIO.input(moisture1_pin))
+    time.sleep(1)
     print("Moisture Sensor2 = ", GPIO.input(moisture2_pin))
+    time.sleep(1)
     print("Moisture Sensor3 = ", GPIO.input(water_level_pin))
+    time.sleep(1)
     lights_on(100)
     time.sleep(1)
     lights_off()
+    time.sleep(1)
     GPIO.output(pump_pin, True)
     time.sleep(1)
     GPIO.output(pump_pin, False)
@@ -138,18 +144,18 @@ def check_all():
 
 # Schedules
 schedule.every().monday.at("11:00").do(water)
-schedule.every().day.at("08:00").do(lights, current_time=0)
-schedule.every().day.at("10:00").do(lights, current_time=1)
-schedule.every().day.at("12:00").do(lights, current_time=2)
-schedule.every().day.at("02:00").do(lights, current_time=3)
-schedule.every().day.at("04:00").do(lights, current_time=4)
-schedule.every().day.at("06:00").do(lights_off)
+schedule.every().day.at("08:00").do(lights_run, current_time=0)
+schedule.every().day.at("10:00").do(lights_run, current_time=1)
+schedule.every().day.at("12:00").do(lights_run, current_time=2)
+schedule.every().day.at("02:00").do(lights_run, current_time=3)
+schedule.every().day.at("04:00").do(lights_run, current_time=4)
+schedule.every().day.at("06:00").do(lights_run, current_time=5)
 
 
 if __name__ == '__main__':
     while(True):
-        # schedule.run_pending()
-        check_all()
+        schedule.run_pending()
+        # check_all()
 
-p.stop()
+lights.stop()
 GPIO.cleanup()

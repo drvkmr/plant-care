@@ -41,8 +41,13 @@ This project attempts to automate the process simply and sensibly. It uses balen
 
 [![Setup1](https://raw.githubusercontent.com/drvkmr/plant-care/master/img/setup.jpg)]()
 [![Setup2](https://raw.githubusercontent.com/drvkmr/plant-care/master/img/setup2.jpg)]()
-[![Moisture](https://raw.githubusercontent.com/drvkmr/plant-care/master/img/moisture.jpg)]()
-[![LDR](https://raw.githubusercontent.com/drvkmr/plant-care/master/img/ldr.jpg)]()
+
+
+Moisture             |  LDR
+:---:|:---:
+![](https://raw.githubusercontent.com/drvkmr/plant-care/master/img/moisture.jpg)  |  ![](https://raw.githubusercontent.com/drvkmr/plant-care/master/img/ldr.jpg)
+
+
 [![circuit](https://raw.githubusercontent.com/drvkmr/plant-care/master/img/messy_circuit.jpg)]()
 
 

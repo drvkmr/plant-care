@@ -1,4 +1,4 @@
-<a href="http://balena.io"><img src="https://github.com/drvkmr/plant-care/tree/master/img/balena_logo.jpg" width=300 title="balena" ></a>
+<a href="http://balena.io"><img src="https://raw.githubusercontent.com/drvkmr/plant-care/master/img/balena_logo.jpg" width=300 title="balena" ></a>
 
 ***balena.io***
 
@@ -39,10 +39,10 @@ This project attempts to automate the process simply and sensibly. It uses balen
 
 ## Physical Setup
 
-[![Setup1](https://github.com/drvkmr/plant-care/tree/master/img/setup.jpg)]()
-[![Setup2](https://github.com/drvkmr/plant-care/tree/master/img/setup2.jpg)]()
-[![Moisture](https://github.com/drvkmr/plant-care/tree/master/img/moisture.jpg)]()
-[![LDR](https://github.com/drvkmr/plant-care/tree/master/img/ldr.jpg)]()
+[![Setup1](https://raw.githubusercontent.com/drvkmr/plant-care/master/img/setup.jpg)]()
+[![Setup2](https://raw.githubusercontent.com/drvkmr/plant-care/master/img/setup2.jpg)]()
+[![Moisture](https://raw.githubusercontent.com/drvkmr/plant-care/master/img/moisture.jpg)]()
+[![LDR](https://raw.githubusercontent.com/drvkmr/plant-care/master/img/ldr.jpg)]()
 
 ## Video
 
@@ -54,7 +54,7 @@ This project attempts to automate the process simply and sensibly. It uses balen
 
 ## Understanding plant
 
-[![rubber](https://github.com/drvkmr/plant-care/tree/master/img/rubber_plant.jpg)]()
+[![rubber](https://raw.githubusercontent.com/drvkmr/plant-care/master/img/rubber_plant.jpg)]()
 
 <a href="https://www.patchplants.com/gb/en/plants/rubber-plant-176/" target="_blank">**Patch Plants**</a>
 
@@ -84,7 +84,7 @@ Moisture sensor is easier to handle. It has two outputs, analog and digital. Mys
 
 Well the knob lets you set a limit to how 'moist' it should be when the digital pin goes high. Bravo whoever designed this sensor !!!
 
-<img src="https://github.com/drvkmr/plant-care/tree/master/img/moisture_knob.jpg" width=600 title="Humidity Sensor" >
+<img src="https://raw.githubusercontent.com/drvkmr/plant-care/master/img/moisture_knob.jpg" width=600 title="Humidity Sensor" >
 
 
 ## FAQs
